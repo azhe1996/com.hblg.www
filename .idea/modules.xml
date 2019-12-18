@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.hblg.day01/com.hblg.day01.iml" filepath="$PROJECT_DIR$/com.hblg.day01/com.hblg.day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.hblg.day02/com.hblg.day02.iml" filepath="$PROJECT_DIR$/com.hblg.day02/com.hblg.day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.hblg.www.iml" filepath="$PROJECT_DIR$/com.hblg.www.iml" />
+    </modules>
+  </component>
+</project>
