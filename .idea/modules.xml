@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com.hblg.day01/com.hblg.day01.iml" filepath="$PROJECT_DIR$/com.hblg.day01/com.hblg.day01.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.hblg.day02/com.hblg.day02.iml" filepath="$PROJECT_DIR$/com.hblg.day02/com.hblg.day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.hblg.day03/com.hblg.day03.iml" filepath="$PROJECT_DIR$/com.hblg.day03/com.hblg.day03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.hblg.web/com.hblg.web.iml" filepath="$PROJECT_DIR$/com.hblg.web/com.hblg.web.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.hblg.www.iml" filepath="$PROJECT_DIR$/com.hblg.www.iml" />
     </modules>
   </component>

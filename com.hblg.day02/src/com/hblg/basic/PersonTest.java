@@ -10,6 +10,7 @@ public class PersonTest {
 
 
     public static void main(String[] args) {
+
         /**
          *  1.需要设计程序重复运行
          *  2.需要设计程序有中止条件
@@ -20,7 +21,7 @@ public class PersonTest {
         //1.1设计电脑的石头,剪刀,布 由随机数来实现
         //1.2设计可以拿到用户输入的石头/剪刀/布
 //        Math.random() 生成0~1之间的随机小数
-        Random ran = new Random();
+        Random ran = new Random();//has-a
         Scanner scn = new Scanner(System.in);
         while(true){
             int com = ran.nextInt(3)+1;
