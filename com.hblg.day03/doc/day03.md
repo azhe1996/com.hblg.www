@@ -145,16 +145,16 @@ java的面向对象的特性有哪些?
 
 ​	示例:
 
-	>~~~java
-	>public class User {
-	>    private String name;
-	>    private String pwd ;
-	>    private int role ;
-	>    /**getter/setter方法略*/
-	>}
-	>~~~
-	>
-	>
+~~~java
+public class User {
+   private String name;    
+   private String pwd ;
+   private int role ;
+   /**getter/setter方法略*/
+}
+~~~
+
+
 
 ### 继承
 
