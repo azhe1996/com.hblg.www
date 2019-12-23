@@ -26,14 +26,32 @@ public class CirclePanel extends JPanel {
                     case Circle.LEFT_DOWN:
                         c.y++;
                         c.x--;
+                        if(c.y>(GameFrame.H-c.r*2)){
+                            c.driecption=Circle.LEFT_UP;
+                        }
+                        if(c.x<0){
+                            c.driecption=Circle.RIGHT_DOWN;
+                        }
                         break;
                     case Circle.LEFT_UP:
                         c.x--;
                         c.y--;
+                        if(c.y<0){
+                            c.driecption=Circle.LEFT_DOWN;
+                        }
+                        if(c.x<0){
+                            c.driecption=Circle.RIGHT_UP;
+                        }
                         break;
                     case Circle.RIGHT_UP:
                         c.y--;
                         c.x++;
+                        if(c.y<0){
+                            c.driecption=Circle.RIGHT_DOWN;
+                        }
+                        if(c.x>(GameFrame.W-c.r*2)){
+                            c.driecption=Circle.LEFT_UP;
+                        }
                         break;
                 }
 
@@ -41,7 +59,7 @@ public class CirclePanel extends JPanel {
 
 
                 try {
-                    Thread.sleep(10);
+                    Thread.sleep(1);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
