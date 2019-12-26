@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.baidu.group1'
+version '1.0-SNAPSHOT'
+//JDK版本
+sourceCompatibility = 1.8
+
+repositories {
+    //本地的Maven仓库
+    mavenLocal();
+    //如果本地没有jar包.可以从aliyun的镜像仓库下载jar包.
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    //外网.
+    mavenCentral()
+}
+
+//当前项目需要的jar包
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

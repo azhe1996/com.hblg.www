@@ -33,6 +33,16 @@ public class BallPanel extends JPanel {
             int i = 0 ;
             while(true){
                 i++;
+                //能实现图片的切换
+//                if(i%2==0){
+//                    ball.color=Ball.COLOR_1;
+//                }else{
+//                    ball.color=Ball.COLOR_2;
+//                }//不能随意调整图片间的切换的时间
+
+
+
+
                 if(flag){
                     if(i%15==0){
                         createSmallBall();
@@ -47,9 +57,6 @@ public class BallPanel extends JPanel {
                         }
                     }
                 }
-
-
-
 
                 try {
                     Thread.sleep(10);
@@ -112,8 +119,10 @@ public class BallPanel extends JPanel {
         if(balls.size()>0){
             for (int i = 0; i < balls.size(); i++) {
                 Ball ball = balls.get(i);
-                g.setColor(ball.color);
 
+//                g.drawImage(f.img,f.x,f.y,f.w,f.h,this);
+                //
+                g.setColor(ball.color);
                 g.fillOval(ball.x,ball.y,ball.r*2,ball.r*2);
             }
                 System.out.println("当前集合中的值为"+balls.size());
