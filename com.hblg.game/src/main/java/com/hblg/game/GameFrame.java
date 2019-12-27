@@ -9,7 +9,7 @@ public class GameFrame extends JFrame {
     public static final int H = kit.getScreenSize().height*4/5;
     public GameFrame (){
 
-        GamePanel bp = new GamePanel();
+        GamePanel bp = new GamePanel(this);
         this.add(bp);
 
         int screenW = kit.getScreenSize().width;

@@ -13,6 +13,8 @@ public class Star {
     private int speed;
     private Color color;
 
+    Star stars [] = new Star[300];
+
     public Star(){
         ran = new Random();
         x = ran.nextInt(GameFrame.W);
@@ -52,4 +54,42 @@ public class Star {
     public void setColor(Color color) {
         this.color = color;
     }
+
+    /**
+     * 实现背景图星星的下落
+     */
+    public void starsDwon(){
+        for (int i = 0; i < stars.length; i++) {
+            Star star = stars[i];
+            int y = star.getY()+star.getSpeed();
+            if (y>GameFrame.H){
+                y = 0 ;
+            }
+            star.setY(y);
+        }
+    }
+
+
+    public void createStars(){
+        for (int i = 0; i < stars.length; i++) {
+            stars[i] = new Star();
+        }
+    }
+
+    /**
+     * 实现画背景图的星星
+     * @param g
+     */
+    public void drawStars(Graphics g){
+        for (int i = 0; i < stars.length; i++) {
+            Star star = stars[i];
+            g.setColor(star.getColor());
+            Color color = new Color(ran.nextInt(256), ran.nextInt(256), ran.nextInt(256));
+            g.setColor(color);
+            g.drawString("*",star.getX(),star.getY());
+        }
+    }
 }
+
+
+
